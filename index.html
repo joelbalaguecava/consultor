@@ -75,6 +75,16 @@
     .kicker{letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-size:12px;margin-bottom:6px}
     /* Accesibilidad */
     a:focus,button:focus{outline:2px solid var(--brand);outline-offset:2px;border-radius:6px}
+
+    /* Referencias elegantes */
+    .refs summary { cursor: pointer; list-style: none; display:flex; align-items:center; gap:8px; font-weight:600; }
+    .refs summary::-webkit-details-marker { display: none; }
+    .refs summary::after { content:"▼"; font-size:12px; opacity:.7; transition: transform .2s ease; }
+    .refs[open] summary::after { transform: rotate(-180deg); }
+    .refs ol { margin:12px 0 0; padding-left:18px; }
+    .refs li { margin:8px 0; }
+    .refs a { text-decoration: underline; }
+    sup a { color: inherit; }
   </style>
 
   <!-- JSON-LD: Persona + Servicio profesional + FAQ -->
@@ -131,7 +141,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-NJVVHBLB24');
 </script>
   
@@ -146,6 +155,7 @@
         <a href="#zona">Zona de trabajo</a>
         <a href="#perfil">Perfil</a>
         <a href="#contacto">Contacto</a>
+        <a href="#fuentes">Fuentes</a>
       </nav>
     </div>
   </header>
@@ -188,7 +198,7 @@
           <h3>Biomasa y Madera</h3>
           <ul>
             <li>Gestión forestal y abastecimiento sostenible.</li>
-            <li>Integración a cadena CLT y viga laminada (industria en Teruel).</li>
+            <li>Integración a cadena CLT y viga laminada (industria en Teruel).<sup><a href="#ref-5">[5]</a></sup></li>
             <li>Uso térmico: <strong>district heating</strong> y calor industrial.</li>
             <li>Economía local: empleo, formación y trazabilidad.</li>
             <li>Indicadores de impacto y certificaciones.</li>
@@ -204,9 +214,9 @@
           <h3>Clúster Maestrazgo (eólica)</h3>
           <p class="muted small">Resumen público y cifras comunicadas por promotor y medios.</p>
           <ul>
-            <li><strong>125 aerogeneradores</strong>, ≈<strong>760–763 MW</strong> en 20 parques; contrato de turbinas con GE Vernova por &gt;700 M€.</li>
+            <li><strong>125 aerogeneradores</strong>, ≈<strong>760–763 MW</strong> en 20 parques; contrato de turbinas con GE Vernova por &gt;700 M€.<sup><a href="#ref-1">[1]</a></sup></li>
             <li>Previsión comunicada de operación en torno a <strong>2026</strong> (sujeta a licencias y contenciosos).</li>
-            <li>Municipios implicados: Fortanete, Mosqueruela, La Iglesuela del Cid, Cantavieja, Villarluengo, Tronchón, Mirambel y Puertomingalvo, entre otros.</li>
+            <li>Municipios implicados: Fortanete, Mosqueruela, La Iglesuela del Cid, Cantavieja, Villarluengo, Tronchón, Mirambel y Puertomingalvo, entre otros.<sup><a href="#ref-2">[2]</a></sup></li>
             <li>Debate ambiental y social activo; mesas de trabajo con alcaldías (<em>Viento Alto</em>).</li>
           </ul>
           <p class="small muted">Fuente: CIP/GE Vernova y prensa; ver notas al pie del sitio o tu dossier.</p>
@@ -214,11 +224,11 @@
         <div class="card">
           <h3>Fotovoltaica y evacuación</h3>
           <ul>
-            <li><strong>Masía I/II (Puertomingalvo)</strong> ~49,49 MWp cada una; ajustes tras información pública; evacuación parcial por Mosqueruela.</li>
+            <li><strong>Masía I/II (Puertomingalvo)</strong> ~49,49 MWp cada una; ajustes tras información pública; evacuación parcial por Mosqueruela.<sup><a href="#ref-3">[3]</a></sup></li>
           </ul>
           <h3>Redes de calor (biomasa)</h3>
           <ul>
-            <li>Proyecto de <strong>Red de Calor de Teruel</strong> (≈19,5 MW con biomasa + solar térmica).</li>
+            <li>Proyecto de <strong>Red de Calor de Teruel</strong> (≈19,5 MW con biomasa + solar térmica).<sup><a href="#ref-4">[4]</a></sup></li>
             <li>Oferentes locales en district heating con biomasa en la zona.</li>
           </ul>
           <p class="small muted">Estos proyectos impulsan oportunidades para ayuntamientos y tejido local (madera/biomasa).</p>
@@ -264,13 +274,39 @@
 
     <section id="contacto">
       <h2>Contacto</h2>
-      <p>Cuéntame tu proyecto y te propongo una hoja de ruta clara.</p>
+      <p>Cuéntame tu proyecto y miramos juntos como puedo ayudar.</p>
       <div class="cta">
         <a class="btn" href="mailto:joelbalague@mac.com?subject=Consulta%20consultor%20Maestrazgo">joelbalague@mac.com</a>
         <a class="btn secondary" href="tel:+34619685416">+34 619 685 416</a>
         <a class="btn secondary" href="https://www.linkedin.com/in/joel-balague-85030423" rel="me nofollow">LinkedIn</a>
       </div>
       <p class="muted small">Disponibilidad presencial en la comarca y online.</p>
+    </section>
+
+    <!-- Fuentes / Notas de transparencia -->
+    <section id="fuentes">
+      <h2>Fuentes y referencias</h2>
+      <details class="card refs">
+        <summary>Ver referencias públicas</summary>
+        <ol class="small">
+          <li id="ref-1">GE Vernova — Contrato con CIP (&gt;700 M€) para 125 turbinas 6.1‑158 en Teruel (Clúster Maestrazgo).
+            <a href="https://www.gevernova.com/news/press-releases/ge-vernova-copenhagen-infrastructure-partners-cip-contract-more-700-million-wind-turbines-teruel-spain" target="_blank" rel="noopener">Comunicado oficial</a>
+          </li>
+          <li id="ref-2">Ministerio de Política Territorial — Expedientes públicos del Clúster Maestrazgo (municipios afectados).
+            <a href="https://www.mpt.gob.es/" target="_blank" rel="noopener">Portal MPT</a>
+          </li>
+          <li id="ref-3">BOE — Parques fotovoltaicos Masía I y II (Puertomingalvo), ajustes tras información pública.
+            <a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-16767" target="_blank" rel="noopener">BOE-A-2024-16767</a>
+          </li>
+          <li id="ref-4">EsEficiencia — Red de Calor de Teruel (≈19,5 MW con biomasa + solar térmica).
+            <a href="https://www.eseficiencia.es/2024/04/29/marcha-proyecto-nueva-red-calor-teruel-potencia-termica-195-mw" target="_blank" rel="noopener">Artículo</a>
+          </li>
+          <li id="ref-5">Treehood (Andorra, Teruel) — Madera tecnológica (CLT, viga laminada).
+            <a href="https://treehood.es/" target="_blank" rel="noopener">treehood.es</a>
+          </li>
+        </ol>
+      </details>
+      <p class="muted small">Actualizo estas referencias periódicamente.</p>
     </section>
   </main>
 
@@ -283,20 +319,5 @@
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
-
-  <!-- Notas de fuentes (transparencia) — elimina si no lo ves necesario
-  Clúster Maestrazgo: GE Vernova / CIP (>700 M€, 125 turbinas 6.1-158) y 760–763 MW con previsión 2026:
-  https://www.gevernova.com/news/press-releases/ge-vernova-copenhagen-infrastructure-partners-cip-contract-more-700-million-wind-turbines-teruel-spain
-  Autorización y contexto (20 eólicos + 2 FV), debate y cronograma:
-  https://elpais.com/  /  https://www.lavanguardia.com/
-  Municipios en expediente administrativo:
-  Ministerio Política Territorial (expedientes del Clúster Maestrazgo)
-  FV Masía I/II (Puertomingalvo) y ajustes:
-  BOE y Diario de Teruel
-  District heating Teruel y oferentes locales:
-  eseficiencia.es  /  forestaldelmaestrazgo.com
-  Industria madera Treehood (Andorra, Teruel) CLT/viga laminada:
-  https://treehood.es
-  -->
 </body>
 </html>
