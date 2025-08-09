@@ -92,6 +92,17 @@
   height:clamp(200px,38vh,420px);
   overflow:hidden;
 }
+    /* Mantener el cartel del Maestrazgo: recortar solo por la derecha */
+.banner-grid .panel:first-child img{
+  object-position: left center;  /* ancla a la izquierda */
+}
+
+/* Refuerzo en móvil: aún más pegado a la izquierda */
+@media (max-width: 720px){
+  .banner-grid .panel:first-child img{
+    object-position: 0% 50%;  /* 0% = borde izquierdo */
+  }
+}
 .panel{
   position:relative;
   margin:0; /* quita margen por defecto de <figure> */
