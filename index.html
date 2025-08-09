@@ -73,8 +73,10 @@
     footer{padding:32px 0}
     .pill{display:inline-block;background:color-mix(in srgb, var(--brand) 15%, transparent);border:1px dashed var(--brand);color:var(--brand);border-radius:999px;padding:6px 10px;font-size:13px}
     .kicker{letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-size:12px;margin-bottom:6px}
+
     /* Accesibilidad */
     a:focus,button:focus{outline:2px solid var(--brand);outline-offset:2px;border-radius:6px}
+    :target{scroll-margin-top:84px;} /* evita que el sticky header tape anclas */
 
     /* Referencias elegantes */
     .refs summary { cursor: pointer; list-style: none; display:flex; align-items:center; gap:8px; font-weight:600; }
@@ -135,14 +137,14 @@
   }
   </script>
 
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NJVVHBLB24"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-NJVVHBLB24');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NJVVHBLB24"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NJVVHBLB24');
+  </script>
   
 </head>
 <body>
@@ -167,7 +169,7 @@
       <p>Soy <strong>Joel Balagué</strong> (ex Dalkia). Ayudo a <strong>ayuntamientos</strong> y a <strong>promotores/EPC</strong> a ejecutar con rigor técnico y sensibilidad territorial los proyectos energéticos del Maestrazgo. También apoyo el <strong>aprovechamiento maderero y su potencial integración en la industria de madera tecnológica</strong> (CLT, viga laminada) con base en Teruel.</p>
       <div class="cta">
         <a class="btn" href="mailto:joelbalague@mac.com?subject=Consulta%20consultor%20Maestrazgo">Escríbeme</a>
-        <a class="btn secondary" href="https://wa.me/34619685416" rel="nofollow">WhatsApp</a>
+        <a class="btn secondary" href="https://wa.me/34619685416" target="_blank" rel="nofollow noopener noreferrer">WhatsApp</a>
         <a class="btn secondary" href="#servicios">Ver cómo puedo ayudar</a>
       </div>
     </section>
@@ -274,11 +276,11 @@
 
     <section id="contacto">
       <h2>Contacto</h2>
-      <p>Cuéntame tu proyecto y miramos juntos como puedo ayudar.</p>
+      <p>Cuéntame tu proyecto y miramos juntos cómo puedo ayudar.</p>
       <div class="cta">
         <a class="btn" href="mailto:joelbalague@mac.com?subject=Consulta%20consultor%20Maestrazgo">joelbalague@mac.com</a>
         <a class="btn secondary" href="tel:+34619685416">+34 619 685 416</a>
-        <a class="btn secondary" href="https://www.linkedin.com/in/joel-balague-85030423" rel="me nofollow">LinkedIn</a>
+        <a class="btn secondary" href="https://www.linkedin.com/in/joel-balague-85030423" target="_blank" rel="me nofollow noopener noreferrer">LinkedIn</a>
       </div>
       <p class="muted small">Disponibilidad presencial en la comarca y online.</p>
     </section>
@@ -286,23 +288,23 @@
     <!-- Fuentes / Notas de transparencia -->
     <section id="fuentes">
       <h2>Fuentes y referencias</h2>
-      <details class="card refs">
+      <details class="card refs" open>
         <summary>Ver referencias públicas</summary>
         <ol class="small">
           <li id="ref-1">GE Vernova — Contrato con CIP (&gt;700 M€) para 125 turbinas 6.1‑158 en Teruel (Clúster Maestrazgo).
-            <a href="https://www.gevernova.com/news/press-releases/ge-vernova-copenhagen-infrastructure-partners-cip-contract-more-700-million-wind-turbines-teruel-spain" target="_blank" rel="noopener">Comunicado oficial</a>
+            <a href="https://www.gevernova.com/news/press-releases/ge-vernova-copenhagen-infrastructure-partners-cip-contract-more-700-million-wind-turbines-teruel-spain" target="_blank" rel="noopener noreferrer">Comunicado oficial</a>
           </li>
           <li id="ref-2">Ministerio de Política Territorial — Expedientes públicos del Clúster Maestrazgo (municipios afectados).
-            <a href="https://www.mpt.gob.es/" target="_blank" rel="noopener">Portal MPT</a>
+            <a href="https://www.mpt.gob.es/" target="_blank" rel="noopener noreferrer">Portal MPT</a>
           </li>
           <li id="ref-3">BOE — Parques fotovoltaicos Masía I y II (Puertomingalvo), ajustes tras información pública.
-            <a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-16767" target="_blank" rel="noopener">BOE-A-2024-16767</a>
+            <a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-16767" target="_blank" rel="noopener noreferrer">BOE-A-2024-16767</a>
           </li>
           <li id="ref-4">EsEficiencia — Red de Calor de Teruel (≈19,5 MW con biomasa + solar térmica).
-            <a href="https://www.eseficiencia.es/2024/04/29/marcha-proyecto-nueva-red-calor-teruel-potencia-termica-195-mw" target="_blank" rel="noopener">Artículo</a>
+            <a href="https://www.eseficiencia.es/2024/04/29/marcha-proyecto-nueva-red-calor-teruel-potencia-termica-195-mw" target="_blank" rel="noopener noreferrer">Artículo</a>
           </li>
           <li id="ref-5">Treehood (Andorra, Teruel) — Madera tecnológica (CLT, viga laminada).
-            <a href="https://treehood.es/" target="_blank" rel="noopener">treehood.es</a>
+            <a href="https://treehood.es/" target="_blank" rel="noopener noreferrer">treehood.es</a>
           </li>
         </ol>
       </details>
@@ -317,7 +319,57 @@
   </footer>
 
   <script>
+    // Año dinámico
     document.getElementById('y').textContent = new Date().getFullYear();
+
+    // 1) Abrir "Fuentes" al navegar a #ref-n y hacer scroll suave
+    (function(){
+      const refs = document.querySelector('details.refs');
+      function openRefsAndScrollTo(id){
+        if (!refs) return;
+        refs.open = true;
+        const el = document.getElementById(id);
+        if (el){
+          el.scrollIntoView({behavior:'smooth', block:'start'});
+          if (history.pushState) history.pushState(null, '', '#'+id);
+          else location.hash = id;
+        }
+      }
+      // Click en sup [n]
+      document.addEventListener('click', (e) => {
+        const a = e.target.closest('a[href^="#ref-"]');
+        if (a){
+          e.preventDefault();
+          openRefsAndScrollTo(a.getAttribute('href').slice(1));
+        }
+      });
+      // Cargar con hash #ref-n
+      if (location.hash && location.hash.startsWith('#ref-')){
+        setTimeout(()=>openRefsAndScrollTo(location.hash.slice(1)), 0);
+      }
+      // Cambios de hash posteriores
+      window.addEventListener('hashchange', () => {
+        if (location.hash.startsWith('#ref-')){
+          openRefsAndScrollTo(location.hash.slice(1));
+        }
+      });
+    })();
+
+    // 2) Forzar nueva pestaña en enlaces externos (http/https con host distinto)
+    (function(){
+      document.querySelectorAll('a[href^="http"]').forEach(a=>{
+        try{
+          const u = new URL(a.href);
+          if (u.host && u.host !== location.host){
+            a.target = '_blank';
+            const rel = (a.getAttribute('rel')||'').split(' ').filter(Boolean);
+            if (!rel.includes('noopener')) rel.push('noopener');
+            if (!rel.includes('noreferrer')) rel.push('noreferrer');
+            a.setAttribute('rel', rel.join(' '));
+          }
+        }catch(e){}
+      });
+    })();
   </script>
 </body>
 </html>
